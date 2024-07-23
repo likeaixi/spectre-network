@@ -7,6 +7,6 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-nohup /root/spectred --utxoindex --rpcmaxclients=2048 --appdir=/root/spectre/data >/root/spectred-`date +%Y-%m-%d`.log  2>&1 &
+nohup /root/spectre/spectred --utxoindex --rpcmaxclients=2048 --appdir=/root/spectre/data >/root/spectred-`date +%Y-%m-%d`.log  2>&1 &
 
 echo "[`date '+%Y-%m-%d %H:%M:%s'`] spectred started"
